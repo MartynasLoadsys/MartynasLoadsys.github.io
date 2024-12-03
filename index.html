@@ -660,7 +660,7 @@ $(fortuneButton).on('click', function() {
 });	  
 function notifyParentResize () {
     console.log(document.querySelector('.page-wrapper').clientHeight);
-        window.parent.postMessage({'type': 'resize', value: document.querySelector('.page-wrapper').clientHeight}, "https://fdd.lndo.site);
+        window.parent.postMessage({'type': 'resize', value: document.querySelector('.page-wrapper').clientHeight}, "https://fdd.lndo.site");
 }
 
 setInterval(function() {
