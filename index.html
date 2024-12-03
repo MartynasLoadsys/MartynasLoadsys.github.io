@@ -660,7 +660,7 @@ $(fortuneButton).on('click', function() {
 });	  
 function notifyParentResize () {
     if (window.parent && typeof window.parent.resize === 'function') {
-        window.parent.resize(document.querySelector('.body').clientHeight);
+        window.parent.postMessage({'type': 'resize', value: document.querySelector('.page-wrapper').clientHeight});
     }
 }
 
