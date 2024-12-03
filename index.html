@@ -659,9 +659,7 @@ $(fortuneButton).on('click', function() {
    predictedText.text(item)  
 });	  
 function notifyParentResize () {
-    if (window.parent && typeof window.parent.resize === 'function') {
         window.parent.postMessage({'type': 'resize', value: document.querySelector('.page-wrapper').clientHeight});
-    }
 }
 
 window.addEventListener('resize', notifyParentResize);
