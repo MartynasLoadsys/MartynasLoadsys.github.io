@@ -663,7 +663,7 @@ function notifyParentResize () {
 }
 
 window.addEventListener('resize', notifyParentResize);
-setTimeout(() => {
+setInterval(() => {
     notifyParentResize();
 }, 1000);
 </script>
